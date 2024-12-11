@@ -20,6 +20,15 @@ module.exports = {
         extrabold: '800',
         black: '900',
       },
+      keyframes: {
+        'backdrop-blur-fade': {
+          '0%': { backdropFilter: 'blur(12px)' }, // Equivalent to backdrop-blur-md
+          '100%': { backdropFilter: 'blur(0px)' }, // No blur
+        },
+      },
+      animation: {
+        'fade-blur': 'backdrop-blur-fade 3s forwards', // Animation duration: 3s, forwards keeps the final state
+      },
     },
   },
   plugins: [],

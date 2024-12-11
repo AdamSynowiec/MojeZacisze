@@ -15,15 +15,15 @@ const Nav = () => {
                         </ul>
                     </div>
                     <div className="hidden xl:block flex-1">
-                        <ul className='flex items-center justify-between text-zinc-800 text-md uppercase'>
+                        <ul className='flex items-center justify-between text-gray-800 text-md uppercase'>
                             <li>
-                                <Link className='font-montserrat border-b-2 border-transparent hover:border-zinc-800 transition-all'>O inwestycji</Link>
+                                <Link className='font-montserrat border-b-2 border-transparent hover:border-gray-800 transition-all'>O inwestycji</Link>
                             </li>
                             <li>
-                                <Link className='font-montserrat border-b-2 border-transparent hover:border-zinc-800 transition-all'>Lokalizacja</Link>
+                                <Link className='font-montserrat border-b-2 border-transparent hover:border-gray-800 transition-all'>Lokalizacja</Link>
                             </li>
                             <li>
-                                <Link className='font-montserrat border-b-2 border-transparent hover:border-zinc-800 transition-all'>Wizualizacje</Link>
+                                <Link className='font-montserrat border-b-2 border-transparent hover:border-gray-800 transition-all'>Wizualizacje</Link>
                             </li>
                         </ul>
                     </div>
@@ -31,15 +31,15 @@ const Nav = () => {
                         <img src={logo_black} className="h-full mx-auto" alt="" />
                     </div>
                     <div className="hidden xl:block flex-1">
-                        <ul className='flex items-center justify-between text-zinc-800 text-md uppercase'>
+                        <ul className='flex items-center justify-between text-gray-800 text-md uppercase'>
                             <li>
-                                <Link className='font-montserrat border-b-2 border-transparent hover:border-zinc-800 transition-all'>Lokale</Link>
+                                <Link className='font-montserrat border-b-2 border-transparent hover:border-gray-800 transition-all'>Lokale</Link>
                             </li>
                             <li>
-                                <Link className='font-montserrat border-b-2 border-transparent hover:border-zinc-800 transition-all'>Kontakt</Link>
+                                <Link className='font-montserrat border-b-2 border-transparent hover:border-gray-800 transition-all'>Kontakt</Link>
                             </li>
                             <li>
-                                <Link className='font-montserrat border-2 border-zinc-800 p-2 hover:bg-zinc-800 hover:text-white transition-all'>(+48) 000 - 000 - 000</Link>
+                                <Link className='font-montserrat border-2 border-gray-800 p-2 hover:bg-gray-800 hover:text-white transition-all'>(+48) 000 - 000 - 000</Link>
                             </li>
                         </ul>
                     </div>

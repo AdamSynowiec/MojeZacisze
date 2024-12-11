@@ -90,18 +90,18 @@ const ApartmentsList = () => {
                 {/* Nagłówek */}
                 <div className="col-span-12">
                     <div className="text-center max-w-2xl mx-auto pb-12">
-                        <h2 className="font-montserrat text-5xl font-semibold text-zinc-800 mb-4">
-                            Lista mieszkań
+                        <h2 className="font-montserrat text-5xl font-semibold text-gray-800 mb-4">
+                            Lokale
                         </h2>
-                        <p className="text-lg text-zinc-500 leading-relaxed">
+                        <p className="text-lg text-gray-500 leading-relaxed">
                             Znajdź mieszkanie idealne dla siebie z dostępnych opcji i filtruj według swoich potrzeb.
                         </p>
                     </div>
                 </div>
 
                 {/* Panel filtrów */}
-                <aside className="col-span-12 lg:col-span-3 bg-gray-50 p-6  shadow-md">
-                    <h3 className="font-montserrat text-2xl text-zinc-700 mb-4">Filtry</h3>
+                <aside className="col-span-12 lg:col-span-3 bg-gray-100 p-6  shadow-md">
+                    <h3 className="font-montserrat text-2xl text-gray-700 mb-4">Filtry</h3>
                     <div className="flex flex-col gap-4">
                         {/* ID mieszkania */}
                         <select
@@ -132,7 +132,7 @@ const ApartmentsList = () => {
 
                         {/* Powierzchnia - Suwak */}
                         <div>
-                            <label className="block mb-2 text-zinc-600 font-semibold">Powierzchnia (m²)</label>
+                            <label className="block mb-2 text-gray-600 font-semibold">Powierzchnia (m²)</label>
                             <Range
                                 step={1}
                                 min={MIN_AREA}
@@ -146,7 +146,7 @@ const ApartmentsList = () => {
                                         style={{
                                             background: getTrackBackground({
                                                 values: filters.areaRange,
-                                                colors: ["#D1D5DB", "#3d8032", "#D1D5DB"],
+                                                colors: ["#D1D5DB", "#a3a3a3", "#D1D5DB"],
                                                 min: MIN_AREA,
                                                 max: MAX_AREA,
                                             }),
@@ -158,11 +158,11 @@ const ApartmentsList = () => {
                                 renderThumb={({ props }) => (
                                     <div
                                         {...props}
-                                        className="w-5 h-5 bg-green-800 rounded-full shadow focus:outline-none"
+                                        className="w-5 h-5 bg-gray-500 rounded-full shadow focus:outline-none"
                                     />
                                 )}
                             />
-                            <div className="flex justify-between mt-2 text-sm text-zinc-600">
+                            <div className="flex justify-between mt-2 text-sm text-gray-600">
                                 <span>{filters.areaRange[0]} m²</span>
                                 <span>{filters.areaRange[1]} m²</span>
                             </div>

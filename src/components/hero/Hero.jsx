@@ -13,7 +13,7 @@ const Hero = () => {
                 backgroundAttachment: 'fixed'
             }}
             className="min-h-screen relative z-50">
-            <div className="w-full h-full bg-black/[0.2]">
+            <div className="w-full h-full bg-black/[0.2] ">
                 <div className="bg-black/[0.2] shadow-md">
                     <div className="container mx-auto px-5">
                         <div className="flex flex-row items-center justify-between h-48 ">
@@ -74,17 +74,22 @@ const Hero = () => {
                         uppercase 
                         text-7xl md:text-8xl lg:text-9xl 
                         pb-4
-                        '>Moje zacisze</h1>
+                        '
+                            data-aos="fade-up" data-aos-delay="400" data-aos-duration="1200" data-aos-anchor-placement="top-bottom"
+                        >Moje zacisze</h1>
                         <span className='
                         drop-shadow-xl
                         font-poppins
                         font-thin
                         uppercase 
                         text-lg md:text-xxl lg:text-3xl
-                        '>Apartamenty w centrum Krakowa</span>
+                        '
+                            data-aos="fade-up" data-aos-delay="1600" data-aos-duration="1200" data-aos-anchor-placement="top-bottom"
+                        >Apartamenty w centrum Krakowa</span>
                     </div>
                     <div class="absolute bottom-10 flex flex-col items-center space-y-2">
-                        <span class="text-sm uppercase tracking-wider text-white font-montserrat">Sprawdź ofertę</span>
+                        <span class="text-sm uppercase tracking-wider text-white font-montserrat"
+                        >Sprawdź ofertę</span>
                         <div class="animate-bounce">
                             <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
