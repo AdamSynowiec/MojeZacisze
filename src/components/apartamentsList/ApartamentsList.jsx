@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Range, getTrackBackground } from "react-range";
+import { FaEye } from 'react-icons/fa'
 
 const MIN_AREA = 20;
 const MAX_AREA = 200;
@@ -85,7 +85,7 @@ const ApartmentsList = () => {
     };
 
     return (
-        <section className="bg-gray-50 py-24 px-5">
+        <section className="pb-24 px-5">
             <div className="container mx-auto grid grid-cols-12 gap-8">
                 {/* Nagłówek */}
                 <div className="col-span-12">
@@ -133,8 +133,10 @@ const ApartmentsList = () => {
 
                                         {/* Action Buttons */}
                                         <td className="p-3 border-b">
-                                            <button className="font-montserrat bg-mainColor text-white px-4 py-2 rounded-lg text-sm hover:bg-mainColor-dark transition-all">
-                                                {val.actions.view}
+                                            <button className="font-montserrat bg-mainColor/[0.8] hover:bg-mainColor/[1] text-white px-4 py-2 rounded-lg text-sm  transition-all">
+                                                <div className="flex flex-row items-center gap-2">
+                                                    <FaEye />{val.actions.view}
+                                                </div>
                                             </button>
                                         </td>
                                     </tr>
