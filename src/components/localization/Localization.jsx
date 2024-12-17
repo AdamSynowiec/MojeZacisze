@@ -2,7 +2,8 @@ import React, { useState, useRef } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-
+import pinIcon from '../../assets/images/pin.png'
+import SZYM_taras_001 from '../../assets/images/SZYM_taras_001.jpg'
 const Localization = () => {
     // State to track active marker
     const [activeMarkerId, setActiveMarkerId] = useState(null);
@@ -58,7 +59,7 @@ const Localization = () => {
     return (
         <section
             style={{
-                backgroundImage: `url(http://localhost:3000/static/media/SZYM_parking_001.edb7e09db2533c1ddb04.jpg)`,
+                backgroundImage: `url(${SZYM_taras_001})`,
                 backgroundSize: '100%',
                 backgroundAttachment: 'fixed'
             }}
@@ -76,20 +77,15 @@ const Localization = () => {
                     </div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                        <div class="lg:col-span-3 grid overflow-hidden gap-px rounded-lg grid-cols-1">
+                        <div class="lg:col-span-3 grid gap-4">
                             {features.map(({ id, title, description }) => (
-                                <div class="flex flex-col gap-3 bg-background p-5 md:gap-6"
+                                <div class="flex flex-col bg-white p-5 md:gap-6"
                                     key={id}
                                     className="group bg-white p-5 cursor-pointer hover:bg-gray-100 transition-all"
                                     onMouseEnter={() => handleMouseEnter(id)}
                                     onMouseLeave={() => handleMouseLeave(id)}
                                 >
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket size-6 shrink-0">
-                                        <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
-                                        <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
-                                        <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
-                                        <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
-                                    </svg>
+                                    <img src={pinIcon} alt="" className='h-6'/>
                                     <div className='mt-2'>
                                         <h2 class="text-base font-semibold  font-montserrat text-gray-900">{title}</h2>
                                         <p class="text-sm font-montserrat text-gray-500">{description}</p>
@@ -103,7 +99,7 @@ const Localization = () => {
                             <MapContainer
                                 center={[50.011619918187705, 19.877485787333782]} // Map center coordinates
                                 zoom={15}
-                                className="w-full h-[500px] rounded-lg shadow-lg overflow-hidden"
+                                className="w-full h-[500px] md:h-full shadow-lg overflow-hidden"
                             >
                                 <TileLayer
                                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

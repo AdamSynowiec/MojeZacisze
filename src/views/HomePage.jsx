@@ -11,6 +11,7 @@ import SZYM_parking_001 from '../assets/images/SZYM_parking_001.jpg'
 import SZYM_taras_001 from '../assets/images/SZYM_taras_001.jpg'
 import Nav from '../components/nav/Nav'
 import Countdown from '../components/counter/Countdown'
+import Features from '../components/features/Features'
 const HomePage = () => {
 
     const images = [
@@ -37,10 +38,10 @@ const HomePage = () => {
             <Nav />
             <Hero />
             <AboutUs />
-            <Countdown />
+            <Features />
             <GallerySlider images={images} />
-            <Localization />
             <ApartamentsList />
+            <Localization />
             <Footer />
         </>
     )

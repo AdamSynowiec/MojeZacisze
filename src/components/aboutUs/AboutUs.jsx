@@ -11,32 +11,30 @@ const AboutUs = () => {
                     <span className='font-montserrat uppercase font-light text-gray-500'>poznaj inwestycję</span>
                     <h2 className='font-montserrat text-6xl font-normal py-4 text-gray-800'>Moje zacisze</h2>
                     <p className='font-montserrat text-xl font-light text-gray-500'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quo maxime autem animi quas
-                        repellat voluptates nulla porro, unde totam. Illo deserunt ea vero nemo architecto? Quibusdam
-                        ad laborum expedita?
+                        Projekt przedstawia nowoczesne, kameralne osiedle zlokalizowane w spokojnej i zielonej części <i className='text-mainColor'>Krakowa – Dzielnicy Dębniki, przy ul. Szymonowicza</i>. Projekt łączy nowoczesną architekturę z funkcjonalnością, tworząc idealną przestrzeń do życia dla osób ceniących komfort, bliskość natury oraz wygodny dostęp do centrum miasta.
                     </p>
                     <div className="grid grid-cols-3 w-full mt-12 divide-x">
                         <div className="text-center p-2">
                             <h3 className='font-poppins font-normal text-5xl lg:text-6xl mb-2 text-gray-800'>
-                                <CountUp start={0} end={5} duration={5} delay={2}/>
+                                <CountUp start={0} end={5} duration={3} delay={2} />
                             </h3>
-                            <span className='font-montserrat uppercase text-md lg:text-lg font-light text-gray-500'>
+                            <span className='font-montserrat uppercase text-sm lg:text-lg font-light text-gray-500'>
                                 Liczba<br />budynków
                             </span>
                         </div>
                         <div className="text-center p-2">
                             <h3 className='font-poppins font-normal text-5xl lg:text-6xl mb-2 text-gray-800'>
-                                <CountUp start={0} end={50} duration={5} delay={2}/>
+                                <CountUp start={0} end={10} duration={3} delay={2} />
                             </h3>
-                            <span className='font-montserrat uppercase text-md lg:text-lg font-light text-gray-500'>
+                            <span className='font-montserrat uppercase text-sm lg:text-lg font-light text-gray-500'>
                                 Lokali<br />mieszkalnych
                             </span>
                         </div>
                         <div className="text-center p-2">
                             <h3 className='font-poppins font-normal text-5xl lg:text-6xl mb-2 text-gray-800'>
-                                <CountUp start={0} end={100} duration={5} delay={2}/>
+                                <CountUp start={0} end={20} duration={3} delay={2} />
                             </h3>
-                            <span className='font-montserrat uppercase text-md lg:text-lg font-light text-gray-500'>
+                            <span className='font-montserrat uppercase text-sm lg:text-lg font-light text-gray-500'>
                                 Miejsc parkingowych
                             </span>
                         </div>
