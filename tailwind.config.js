@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        mainColor: '#3d8032', // Custom main color
+        mainColor: '#3f7f1f', // Custom main color
       },
       fontFamily: {
         poppins: ['"Poppins"', 'sans-serif'], // Poppins font family

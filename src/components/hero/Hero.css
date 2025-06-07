@@ -1,22 +1,32 @@
 /* Animacja zmieniająca tło i przybliżenie */
 @keyframes zoomAndChangeBackground {
     0% {
-        background-image: url('../../assets/images/SZYM_ogrody_001.jpg');
+        background-image: url('../../assets/images/1080p/SZYM_lot_ptatka_002.jpg');
         background-size: cover; /* Utrzymanie proporcji obrazu */
         background-position: center;
     }
-    33% {
-        background-image: url('../../assets/images/SZYM_parking_001.jpg');
+    20% {
+        background-image: url('../../assets/images/1080p/SZYM_ogrody_002.jpg');
         background-size: cover; /* Utrzymanie proporcji obrazu */
         background-position: center;
     }
-    66% {
-        background-image: url('../../assets/images/SZYM_taras_001.jpg');
+    40% {
+        background-image: url('../../assets/images/1080p/SZYM_parking_003.jpg');
+        background-size: cover; /* Utrzymanie proporcji obrazu */
+        background-position: center;
+    }
+    60% {
+        background-image: url('../../assets/images/1080p/SZYM_wnetrze_001.png');
+        background-size: cover; /* Utrzymanie proporcji obrazu */
+        background-position: center;
+    }
+    80% {
+        background-image: url('../../assets/images/1080p/SZYM_wnetrze_002.png');
         background-size: cover; /* Utrzymanie proporcji obrazu */
         background-position: center;
     }
     100% {
-        background-image: url('../../assets/images/SZYM_ogrody_001.jpg');
+        background-image: url('../../assets/images/1080p/SZYM_ogrody_002.jpg');
         background-size: cover; /* Utrzymanie proporcji obrazu */
         background-position: center;
     }
@@ -24,7 +34,7 @@
 
 /* Klasa dla kontenera */
 .hero-background {
-    background-image: url('../../assets/images/SZYM_ogrody_001.jpg');
+    background-image: url('../../assets/images/1080p/SZYM_ogrody_002.jpg');
     background-position: center;
     background-attachment: scroll; /* Zmieniono na scroll dla mobilnych */
     background-size: cover; /* Rozciąganie tła, ale z zachowaniem proporcji */

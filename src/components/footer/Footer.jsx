@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Config } from '../../Config';
 
 const Footer = () => {
   const [formData, setFormData] = useState({
@@ -44,7 +45,7 @@ const Footer = () => {
     }
 
     try {
-      const response = await fetch('http://xyz.pl/kontakt', {
+      const response = await fetch(`${Config.base.url}/server/mailer`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -67,7 +68,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-zinc-900 text-zinc-200 p-8 lg:p-16">
+    <div className="bg-zinc-900 text-zinc-200 p-8 lg:p-16" id="kontakt">
       <div className="container mx-auto grid grid-cols-12 px-6">
         {/* Lewa Sekcja - Dane Firmowe */}
         <div className="mb-12 lg:mb-0 col-span-12 md:col-span-6">
@@ -76,21 +77,21 @@ const Footer = () => {
           <div className="mb-8">
             <h2 className="text-lg text-mainColor mb-2 font-poppins">DANE FIRMOWE</h2>
             <p className="leading-relaxed font-montserrat">
-              Moje Zacisze SP. Z O. O SP. K.<br />
-              UL. XYZ X/X<br />
-              XX-XXX KRAKÓW<br />
-              NIP XXXXXXXXXX<br />
-              KRS XXXXXXXXXX
+              ul. J. Babińskiego 71B,<br />
+              30-394 Kraków<br />
+              NIP 6762684566<br />
+              KRS 0001147815<br />
+              REGON 540597942
             </p>
           </div>
 
           <div>
             <h2 className="text-lg text-mainColor mb-2 font-poppins">ADRES BIURA SPRZEDAŻY</h2>
             <p className="leading-relaxed font-montserrat">
-              UL. XXXX XXXXXXXX X/X<br />
-              XX-XXX KRAKÓW<br />
-              TEL: XXX XXX XXX<br />
-              EMAIL: <a href="mailto:SPRZEDAZ@KRJ307.PL" className="text-mainColor">XXXXXXX@XXX.PL</a>
+              ul. J. Babińskiego 71B,<br />
+              30-394 Kraków<br />
+              TEL: {Config.contact.phoneFormated}<br />
+              EMAIL: <a href="mailto:biuro@zakatekszymonowica.pl" className="text-mainColor">biuro@zakatekszymonowica.pl</a>
             </p>
           </div>
 
